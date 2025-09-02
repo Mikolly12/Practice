@@ -9,6 +9,7 @@ int menuList(){
     cout<<"2. Sub"<<endl;
     cout<<"3. Mul"<<endl;
     cout<<"4. Divide"<<endl;
+    cout<<"5. Mod"<<endl;
     cout<<"Enter here: "<<endl;
     cin>>c;
     return c;
@@ -32,7 +33,10 @@ int main(){
         break;
     case 3:
         cout<<a*b<<endl;
-        break;    
+        break;
+    case 5:
+        cout<<a%b<<endl;
+        break;        
     default:
         break;
     }
