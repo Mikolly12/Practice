@@ -1,8 +1,32 @@
 #include<iostream>
 using namespace std;
 
+int menuList(){
+    int c;
+    cout<<"0. Exit"<<endl;
+    cout<<"1. Add"<<endl;
+    cout<<"2. Sub"<<endl;
+    cout<<"Enter here: "<<endl;
+    cin>>c;
+    return c;
+}
+
 int main(){
-    cout<<"Hello!"<<endl;
-    cout<<"World!"<<endl;
+    
+    int choice;
+    int a=10, b=20;
+    switch ((choice == menuList())!=0)
+    {
+    case 1:
+        cout<<a+b<<endl;
+        break;
+    case 2:
+        cout<<a-b<<endl;
+        break;
+    default:
+        break;
+    }
+
+
     return 0;
 }
